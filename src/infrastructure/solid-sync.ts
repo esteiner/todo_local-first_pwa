@@ -76,7 +76,7 @@ export class SolidPodSync {
   async login(issuer: string): Promise<void> {
     await login({
       oidcIssuer: issuer,
-      redirectUrl: window.location.href,
+      redirectUrl: 'https://esteiner.github.io/todo_local-first_pwa/',
       clientName: 'Local-First Todo App',
     });
   }
