@@ -67,6 +67,18 @@ npm run build
 npm run preview
 ```
 
+### Deployment
+
+This project is configured for automatic deployment to GitHub Pages. See [DEPLOYMENT.md](DEPLOYMENT.md) for detailed instructions.
+
+**Quick deploy to GitHub Pages:**
+1. Push your code to GitHub
+2. Enable GitHub Pages with source "GitHub Actions" in repository settings
+3. Update `.github/workflows/deploy.yml` with your repository name
+4. Push to main branch - deployment happens automatically!
+
+Your app will be live at: `https://YOUR_USERNAME.github.io/YOUR_REPO_NAME/`
+
 ### Running Tests
 
 ```bash

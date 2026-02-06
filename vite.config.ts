@@ -3,6 +3,9 @@ import { VitePWA } from 'vite-plugin-pwa';
 import path from 'path';
 
 export default defineConfig({
+  // Set base path for GitHub Pages deployment
+  // Use '/' for local development, '/repo-name/' for GitHub Pages
+  base: process.env.VITE_BASE_PATH || '/',
   resolve: {
     alias: {
       '@domain': path.resolve(__dirname, './src/domain'),
